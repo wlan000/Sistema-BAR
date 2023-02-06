@@ -10,10 +10,11 @@ a {
     color: var(--text-color);
 }
 
+
 .menu {
     background-color: transparent;
     color: white;
-    display: flex;
+    display: flex; 
     justify-content: center;
     
     font-family: 'Roboto Mono';
@@ -165,7 +166,7 @@ li {
 section div {
     display: flex;
     flex-direction: column;
-    padding: 38px;
+    padding: 0px;
 }
 
 
@@ -196,3 +197,146 @@ section div {
         font-size: 44px;
       }
 }
+
+  .img-logo{
+    width: 80%;
+    max-width: 600px;
+    min-width: 140px;
+    }
+
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #f52323;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-family: 'Roboto Mono';
+      padding: 10px;
+
+      font-size: small;
+    }
+
+
+    .items {
+      text-align: center;
+
+    }
+
+    .items div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      }
+  
+    #cervejas-list {
+      display: none;
+      margin: 20px auto;
+      flex-direction: column;
+    }
+  
+    #cervejas-title:focus + #cervejas-list,
+    #cervejas-title:hover + #cervejas-list {
+      display: block;
+    }
+  
+    #petiscos-list {
+      display: none;
+      margin: 20px auto;
+    }
+  
+    #petiscos-title:focus + #petiscos-list,
+    #petiscos-title:hover + #petiscos-list {
+      display: block;
+    }
+
+
+    #salgados-list {
+      display: none;
+      margin: 20px auto;
+    }
+  
+    #salgados-title:focus + #salgados-list,
+    #salgados-title:hover + #salgados-list {
+      display: block;
+    }
+
+
+    #refrigerantes-list {
+      display: none;
+      margin: 20px auto;
+    }
+  
+    #refrigerantes-title:focus + #refrigerantes-list,
+    #refrigerantes-title:hover + #refrigerantes-list {
+      display: block;
+    }
+
+
+
+
+
+
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #f52323;
+      color: white;
+      width: 100%;
+      font-family: 'Roboto Mono';
+      padding: 10px;
+
+      font-size: small;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Style the list items */
+    header li {
+      margin-right: 100px;
+      cursor: pointer;
+    }
+    
+    /* Style the dropdown items */
+    header li ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: red;
+    }
+    
+    /* Show the dropdown items when the list item is clicked */
+    header li:hover ul {
+      display: block;
+      position: absolute;
+    }
+    
+    /* Style the dropdown items */
+    header li ul li {
+      color: white;
+      padding: 10px;
+    }
+
+    .menu-bar{
+      font-size: small;
+
+    }
+
+    .ul-itens {
+      font-size: small;
+      margin-top: 28px;
+    }
+
+    
