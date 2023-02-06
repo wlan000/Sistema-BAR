@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Roboto Mono';
+}
+
+#form-items{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+
+}
+
+
+.fundo-footer{
+  background: #f52323;
+  filter: blur(150px);
+    width: 100vw;
+    height: 200px;
+    left: 0;
+    z-index: -10;
+    position: absolute;
+    bottom: -10rem;
+  }
+
+
+  @media (min-width: 769px) {
+
+    .fundo{
+     width: 200px;
+     height: 321px;
+     background: #f52323;
+     filter: blur(250px);
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: -10;
+   }
+   
+   
+   .fundo-footer{
+     width: 200px;
+     height: 321px;
+     background: #f52323;
+     filter: blur(250px);
+     position: absolute;
+     left: 0;
+     z-index: -10;
+     bottom: -16rem;
+   }
+   }
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;             
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(7, 7, 7);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--button);  
+    border-radius: 10px;      
+  }
+
+  html {
+    background: var(--backgrond);
+  }
+  
+
+  :root {
+    --backgrond: #000;
+    --text-color: #fff;
+    --button: #ff1818;
+    --border: #29292e;
+    --border-menu-mobile: #a8a8b3;
+    --text-color-menu-mobile: #e1e1e6;
+  }
+
+  .title {
+    margin-top: 8rem;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+
+    font-size: 65px;
+    line-height: 125%;
+  }
+
+
+
+  .title h1 span {
+
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+      -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+      font-family: 'Inter';
+  }
+
+  .title h1 {
+    font-family: 'Inter';
+    font-size: 100px;
+  }
+  
+
+  .petiscos {
+    display: flex;
+    gap: 20px;
+  }
+  .cervejas {
+    display: flex;
+    gap: 20px;
+  }
+  .salgados {
+    display: flex;
+    gap: 20px;
+  }
+
+  .refrigerantes {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .items h1 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-size: 56px;
+    font-family: 'Inter';
+    color: rgb(161, 0, 0);
+    margin: 6px 15px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Mono';
+    color: #e1e1e6;
+    font-size: 25px;
+  }
+li {
+    display: flex;
+    align-items: flex-start;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+}
+
+
+@media only screen and (max-device-width: 300px) {
+
+}
+
+@media (max-width: 600px) {
+    .title h1 span {
+        font-size: 12vw;
+        display: flex;
+        justify-content: center;
+        
+     }
+     .title h1{
+         font-size: 17vw;
+     }
+      
+      .fundo-footer{
+        width: 100px;
+        height: 900px;
+        background: #f52323;
+        filter: blur(400px);
+ 
+      }
+
+      .items h1 {
+        font-size: 44px;
+      }
+}
