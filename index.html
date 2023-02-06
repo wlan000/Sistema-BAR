@@ -18,6 +18,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +28,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+
+    <header>
+        <ul class="menu-bar">
+            <li>Menu
+                <ul class="ul-itens">
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-bar">
+            <li>Produtos
+                <ul class="ul-itens">
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-bar">
+            <li>Contato
+                <ul class="ul-itens">
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                    <li> <a href="#">Item 1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main class="main-geral">
         <div class="fundo">
             <div></div>
         </div>
@@ -35,52 +79,72 @@
 
         <section class="container grid">
             <div class="title">
-              <h1>
-                FLOR DA BAHIA <br />
-                <span>#VemProFlor</span>
-              </h1>
+              <h1><img class="img-logo" src="logo.png" alt="logo"></h1>
             </div>
     </main> 
     
-       <section class="items">
-            <div>
-                <h1>CERVEJAS</h1>
-                <ul class="cervejas">
-                    <li>Brahma</li>
-                    <li>Heineken</li>
-                    <li>Itaipava</li>
-                    <li>Skol</li>
-                </ul>
+    <section class="items">
+        <div>
+          <h1 id="cervejas-title">CERVEJAS</h1>
+          <ul class="cervejas" id="cervejas-list">
+            <li>Brahma</li>
+            <li>Heineken</li>
+            <li>Itaipava</li>
+            <li>Skol</li>
+          </ul>
+        </div>
+
+        <div>
+            <h1 id="petiscos-title">PETISCOS</h1>
+            <ul class="petiscos" id="petiscos-list">
+                <li>Batatas Fritas</li>
+                <li>Carne do Sol</li>
+                <li>Camarão</li>
+            </ul>
+          </div>
+
+          <div>
+            <h1 id="salgados-title">SALGADOS</h1>
+            <ul class="salgados" id="salgados-list">
+                <li>Pastel de Forno</li>
+                <li>Coxinha</li>
+                <li>Enroladinho</li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h1 id="refrigerantes-title">REFRIGERANTES</h1>
+            <ul class="refrigerantes" id="refrigerantes-list">
+                <li>Coca-Cola</li>
+                <li>Fanta</li>
+                <li>Pepsi</li>
+            </ul>
+          </div>
+
+            <div class="rodape-fix">
+                <footer>
+                    <p><a href="#"><i class="fas fa-shopping-cart"></i> Meu pedido</a></p>
+                    <p><a href="#"><i class="fas fa-user"></i> Perfil</a></p>
+                    <p><a href="#"><i class="fas fa-book"></i> Cardápio</a></p>
+                    <p><a href="#"><i class="fas fa-cart-arrow-down"></i> Carrinho</a></p>
+                  </footer>
             </div>
-            <div>
-                <h1>PETISCOS</h1>
-                <ul class="petiscos">
-                    <li>Batatas Fritas</li>
-                    <li>Carne do Sol</li>
-                    <li>Camarão</li>
-                </ul>
-            </div>
-            <div>
-                <h1>SALGADOS</h1>
-                <ul class="salgados">
-                    <li>Pastel de Forno</li>
-                    <li>Coxinha</li>
-                    <li>Enroladinho</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="refri1">REFRIGERANTES</h1>
-                <ul class="refrigerantes">
-                    <li>Coca-Cola</li>
-                    <li>Fanta</li>
-                    <li>Pepsi</li>
-                </ul>
-                
-            </div>
+
        </section>
     
        <section class="localizacao">
             <div></div>
        </section>
 </body>
+<script>
+
+  const cervejasTitle = document.getElementById("cervejas-title");
+  const cervejasList = document.getElementById("cervejas-list");
+
+  cervejasTitle.addEventListener("click", function() {
+    cervejasList.style.display = cervejasList.style.display === "block" ? "none" : "block";
+  });
+
+</script>
 </html>
