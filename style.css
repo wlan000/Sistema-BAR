@@ -279,13 +279,16 @@ section div {
 
 
 
+header ul {
+        justify-content: space-evenly; 
 
+}
 
 
     header {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+
       background-color: #f52323;
       color: white;
       width: 100%;
